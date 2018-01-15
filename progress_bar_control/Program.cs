@@ -19,5 +19,15 @@ namespace progress_bar_control
             InitializeComponent();
         }
 
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                System.Threading.Thread.Sleep(100);
+                backgroundWorker1.ReportProgress(i);
+            }
+        }
+
+
     }
 }
