@@ -34,6 +34,9 @@ namespace progress_bar_control
             this.Text = e.ProgressPercentage.ToString();
         }
 
-
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            backgroundWorker1.RunWorkerAsync();
+        }
     }
 }
