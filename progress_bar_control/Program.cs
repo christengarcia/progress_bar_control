@@ -28,6 +28,12 @@ namespace progress_bar_control
             }
         }
 
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = e.ProgressPercentage;
+            this.Text = e.ProgressPercentage.ToString();
+        }
+
 
     }
 }
