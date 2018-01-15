@@ -12,4 +12,12 @@ using System.Windows.Forms;
 
 namespace progress_bar_control
 {
-    
+    public partial class Form1 : Form1
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+    }
+}
